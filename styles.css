@@ -1,0 +1,252 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F7F4E7;
+}
+
+header {
+  background-color: #C71585;
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+  position: relative;
+}
+
+.header-right {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+}
+
+/* Common style for user info */
+.user-info, .nav-user-info {
+font-size: 16px;
+color: white; /* Adjust color if needed */
+margin-left: 20px;
+font-size: 16px;
+}
+
+/* Styling for navigation */
+nav {
+background-color: #DB7093;
+overflow: hidden;
+display: flex;
+justify-content: space-between; /* Space between nav links and search form */
+align-items: center; /* Ensure items are centered vertically */
+padding: 0 20px; /* Add padding to the sides */
+}
+
+nav a {
+display: block;
+color: white;
+text-align: center;
+padding: 14px 20px;
+text-decoration: none;
+}
+
+/* Ensure search-form uses flexbox to align its child items */
+.search-form {
+display: flex;
+align-items: center; /* Vertically align input and button */
+margin-left: auto; /* Align to the right */
+}
+
+/* Adjust the input styling */
+.search-form input[type="text"] {
+  margin: 0; /* Remove any default margin */
+  padding: 8px; /* Adjust padding for consistent look */
+  border: none; /* Remove borders */
+  border-radius: 3px 0 0 3px; /* Rounded corners on the left side */
+}
+
+.search-form button {
+  margin: 0; /* Remove any default margin */
+  padding: 8px 12px; /* Adjust padding for consistent look */
+  border: none; /* Remove borders */
+  border-radius: 0 3px 3px 0; /* Rounded corners on the right side */
+  background-color: #ff69b4; /* Button color */
+  color: white;
+}
+
+
+
+
+/* Button hover effect */
+.search-form button:hover {
+background-color: #ff1493; /* Button hover color */
+}
+
+/* Hover effect for nav links */
+nav a:hover {
+background-color: #ddd;
+color: black;
+}
+
+
+.container {
+padding: 20px;
+}
+
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 5px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.post-form, .sign-up-form, .log-in-form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.post-form input[type="text"],
+.post-form textarea {
+  width: 95%;
+  padding: 10px;
+  margin: 5px 0 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.post-form input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.post-form input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  padding: 20px;
+}
+
+/* Post Container and Layout */
+.posts-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Space between posts */
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the post content */
+  background-color: white; /* White background for each post */
+  border: 1px solid #ddd; /* Light border around the post */
+  padding: 20px; /* Add padding inside the post */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow around the post */
+  max-width: 500px;
+  width: 100%;
+  margin-bottom: 20px; /* Space between posts */
+}
+
+.post-content {
+  text-align: center; /* Center title */
+  width: 100%; /* Make sure it uses full width */
+}
+
+.post-content h3 {
+  font-size: 1.5em;
+  text-align: center; /* Center title */
+}
+
+.post-content p {
+  font-size: 1em;
+  color: #333;
+  text-align: left; /* Align text to the left */
+  width: 100%; /* Ensure text uses full width of its container */
+  margin-bottom: 10px; /* Space between text and image */
+}
+
+.post-image {
+  text-align: center; /* Center the image */
+  margin-bottom: 10px; /* Space between image and author info */
+}
+
+.post-image img {
+  max-width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: contain;
+}
+
+.post-author {
+  font-size: 0.9em;
+  color: #666;
+  text-align: center; /* Center the author and time info */
+}
+
+
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+form input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+p {
+  text-align: center;
+  margin-top: 10px;
+}
+
+p a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+.donation-container img {
+  display: block;
+  margin: 0 auto;
+  max-width: 200px;
+  max-height: 200px;
+  width: auto;
+  height: auto;
+}
