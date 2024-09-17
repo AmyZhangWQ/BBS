@@ -7,3 +7,4 @@
 7. run the sql script to rebuild the table.
 8. creat a folder named "uploads" to store the BBS images.
 9. done
+<img width="937" alt="image" src="https://github.com/user-attachments/assets/82ef90e2-11b9-4041-9bed-8b3bed0d3475">
