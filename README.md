@@ -5,4 +5,5 @@
 5. change the file path in code.
 6. deploy the database, the database should named as 101bbs.
 7. run the sql script to rebuild the table.
-8. done
+8. creat a folder named "uploads" to store the BBS images.
+9. done
